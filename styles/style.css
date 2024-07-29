@@ -12,6 +12,13 @@
      justify-content: center;
      align-items: center;
 }
+.btn_primary{
+     border-radius: 46px;
+     background-color: rgb(230, 83, 60);
+     padding:20px;
+     width:20%;
+    text-align: center;
+}
 body{
      font-family: "Inter", sans-serif;
      border:1px solid blue;
@@ -23,12 +30,14 @@ body{
 /* Navbar Styles */
 .navbar{
      border:1px solid brown;
+     width:80%;
+     margin: 0 auto;
      justify-content: space-between;
 }
 .website_title{
      font-style: italic;
      font-weight: 800;
-     font-size: 2rem;
+     font-size: 1.8rem;
 }
 .nav_options{
      border: 1px solid rgba(255, 255, 255, 0.1);
