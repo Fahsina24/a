@@ -67,17 +67,18 @@ body{
 }
 .menu_bar{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: end;
-    transform:translate(-5%,-230%);
+    transform:translate(-5%,-170%);
+   
 }
 .item{
-     visibility: hidden;
+     /* visibility: hidden; */
      border:1px solid white;
      background-color: white;
      height:2px;
-     width:6%;
-     margin-bottom: 3px;
+     width:7%;
+     margin-bottom: 4px;
      border-radius: 4px;
      
 }
