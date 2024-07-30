@@ -72,14 +72,13 @@ body{
 
 /* Banner Styles Starts */
 .banner_container{
-     border: 1px solid salmon;
      width:80%; 
      justify-content:space-between;
      align-items:center;
 }
 .banner_content{
      border:1px solid saddlebrown;
-     margin-top:-130px;
+     margin-top:70px;
 }
 .banner_title{
      font-size: 3.5rem;
@@ -119,7 +118,7 @@ body{
      justify-content: flex-start;
      padding: 20px;
      margin: 0;
-     backdrop-filter: blur(20px);
+     backdrop-filter: blur(5px);
      
 }
 .circle{
@@ -144,9 +143,11 @@ body{
 }
 .card1{
      transform:translate(-20%, -170%);
-     width:200px;
+     width:200px; 
+     position: absolute;
 }
 .card2{
-     transform:translate(100%, -450%);
+     transform:translate(120%, -450%);
      width:200px;
+     position: absolute;
 }
