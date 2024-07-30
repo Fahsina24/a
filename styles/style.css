@@ -1,11 +1,30 @@
 /* Font Style */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 /* Shared Styles */
+*{   box-sizing: border-box;
+     margin:0;
+}
+body{
+     font-family: "Inter", sans-serif;
+     border:1px solid blue;
+     max-width: 1140px;
+     margin: 0 auto;
+}
+
 .primary_color{
      color: rgb(230, 83, 60);
 }
 .primary_text_color{
      color: rgb(255, 255, 255);
+}
+.secondary_text_color,
+.card_description,
+.card_description2{
+     color: rgba(255, 255, 255, 0.365);
 }
 .display_flex{
      display: flex;
@@ -15,24 +34,27 @@
 .btn_primary{
      border-radius: 46px;
      background-color: rgb(230, 83, 60);
-     padding:20px;
+     padding:10px;
      width:20%;
-    text-align: center;
+     text-align:center;
 }
-body{
-     font-family: "Inter", sans-serif;
-     border:1px solid blue;
-     max-width: 1140px;
-     margin: 0 auto;
-     background-color: rgb(17, 17, 17);
+
+.color_holder{
+     width:100%; 
+     margin:0 auto;
+     background-color:rgba(0, 0, 0, 0.865);
+}
+
+.container{
+     width:80%;
+     margin:0 auto;
+     background-color:rgba(0, 0, 0, 0);
 }
 
 /* Navbar Styles */
 .navbar{
-     border:1px solid brown;
-     width:80%;
-     margin: 0 auto;
-     justify-content: space-between;
+     justify-content:space-between;
+     padding:5px;
 }
 .website_title{
      font-style: italic;
@@ -40,8 +62,91 @@ body{
      font-size: 1.8rem;
 }
 .nav_options{
-     border: 1px solid rgba(255, 255, 255, 0.1);
-     border-radius:  39px;
-     justify-content: space-around;
+     border: 3px solid rgba(255, 255, 255, 0.1);
+     border-radius:39px;
+     justify-content: space-between;
      width:50%;
+     font-size: 1rem;
+     padding:5px 20px 5px 10px;
+}
+
+/* Banner Styles Starts */
+.banner_container{
+     border: 1px solid salmon;
+     width:80%; 
+     justify-content:space-between;
+     align-items:center;
+}
+.banner_content{
+     border:1px solid saddlebrown;
+     margin-top:-130px;
+}
+.banner_title{
+     font-size: 3.5rem;
+     font-weight: 800;
+     margin-bottom:20px;
+}
+.shape{
+     font-family: "Dancing Script", cursive;
+     font-size: 5rem;
+     font-weight:500;
+     font-style: italic;
+}
+.btn_class{
+     width:100%;
+}
+
+.btn_class .btn_primary{
+    font-size:1rem;
+    padding: 15px;
+    width:40%;
+    margin-top: 20px;
+    border: 1px solid rgb(230, 83, 60);
+    color:white;
+}
+
+.btn_class .btn_border{
+     border: 1px solid rgb(255, 255, 255);
+     background-color: rgba(0, 0, 0, 0);
+     margin-left: 10px;
+     }
+.banner_img{
+     width:40%;
+}
+.card1,.card2{
+     background-color: rgba(48, 48, 48, 0.54);
+     border-radius: 12px;
+     justify-content: flex-start;
+     padding: 20px;
+     margin: 0;
+     backdrop-filter: blur(20px);
+     
+}
+.circle{
+     border:1px solid rgb(230, 83, 60);
+     background-color: rgb(230, 83, 60);
+     height:30px;
+     width:30px;
+     border-radius: 50%;
+     margin-right: 15px;
+}
+.card_point2{
+     font-size: 2rem;
+}
+.card_description2{
+     font-size: 1rem;
+}
+.card_description{
+     font-size: 1rem;
+}
+.card_point1{
+     font-size: 1.5rem;
+}
+.card1{
+     transform:translate(-20%, -170%);
+     width:200px;
+}
+.card2{
+     transform:translate(100%, -450%);
+     width:200px;
 }
