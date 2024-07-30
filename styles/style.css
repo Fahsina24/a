@@ -10,7 +10,6 @@
 }
 body{
      font-family: "Inter", sans-serif;
-     border:1px solid blue;
      max-width: 1140px;
      margin: 0 auto;
 }
@@ -21,10 +20,8 @@ body{
 .primary_text_color{
      color: rgb(255, 255, 255);
 }
-.secondary_text_color,
-.card_description,
-.card_description2{
-     color: rgba(255, 255, 255, 0.365);
+.secondary_text_color{
+     color: rgba(255, 255, 255, 0.5);
 }
 .display_flex{
      display: flex;
@@ -47,8 +44,7 @@ body{
 
 .container{
      width:80%;
-     margin:0 auto;
-     background-color:rgba(0, 0, 0, 0);
+     margin:0 auto;   
 }
 
 /* Navbar Styles */
@@ -67,7 +63,7 @@ body{
      justify-content: space-between;
      width:50%;
      font-size: 1rem;
-     padding:5px 15px 5px 15px;
+     padding:5px 15px 5px 8px;
 }
 .menu_bar{
     display: flex;
@@ -134,7 +130,7 @@ body{
      justify-content: flex-start;
      padding: 20px;
      margin: 0;
-     backdrop-filter: blur(5px);   
+     backdrop-filter: blur(15px);   
 }
 .circle{
      border:1px solid rgb(230, 83, 60);
@@ -147,17 +143,26 @@ body{
 .card_point2{
      font-size: 2rem;
      font-weight: 900;
+     padding-left: 10px;
+     color: white;
 }
 .card_description2{
-     font-size: 0.8rem;
+     font-size: 0.65rem;
      margin-top:5px;
+     font-weight:700;
+     padding-left:10px;
+     color: rgba(255, 255, 255, 0.65);
 }
 .card_description{
      font-size: 0.8rem;
+     font-weight: 600;
+     margin-top: 5px;
+     color: rgba(255, 255, 255, 0.65);
 }
 .card_point1{
      font-size: 1.5rem;
      font-weight: 700;
+     color: white;
 }
 .card1{
      transform:translate(-20%, -160%);
@@ -172,28 +177,25 @@ body{
      position: absolute;
 }
 
-.triangle-right {
-     visibility: hidden;
-	border-top: 5px solid transparent;
-	border-left: 10px solid white;
-	border-bottom:5px solid transparent;
-     transform: translateX(-360%);
-}
 
 
 /* Small Devices Responsive Styles 
-Small device: upto 576 px 
+Small device: up to 576 px 
 Medium Device: 576px to 992 px 
 Large Device: above 993 px 
 */
 
 @media  screen and (max-width:576px) {
+     /* navbar section */
      .nav_options{
           visibility: hidden;
      }
      .item{ 
           visibility: visible;
      }
+
+     /* Banner Section */
+
      .banner_container{
           flex-direction:column;
      }
@@ -207,7 +209,7 @@ Large Device: above 993 px
      }
      .banner_container .banner_img{
           width:100%;
-          margin-left: 2px;
+          margin: 0px auto;
      }
      .card2{
           transform:translate(170%,-700%); 
@@ -216,7 +218,7 @@ Large Device: above 993 px
           padding:15px;
      }
      .card_description2{
-          font-size:0.5rem;
+          font-size:0.4rem;
      }
      .card_point2{
           font-size:1rem;
