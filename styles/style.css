@@ -67,7 +67,23 @@ body{
      justify-content: space-between;
      width:50%;
      font-size: 1rem;
-     padding:5px 20px 5px 10px;
+     padding:5px 15px 5px 15px;
+}
+.menu_bar{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transform:translate(-5%,-230%);
+}
+.item{
+     visibility: hidden;
+     border:1px solid white;
+     background-color: white;
+     height:2px;
+     width:6%;
+     margin-bottom: 3px;
+     border-radius: 4px;
+     
 }
 
 /* Banner Styles Starts */
@@ -154,4 +170,79 @@ body{
      width:170px;
      height:100px;
      position: absolute;
+}
+
+.triangle-right {
+     visibility: hidden;
+	border-top: 5px solid transparent;
+	border-left: 10px solid white;
+	border-bottom:5px solid transparent;
+     transform: translateX(-360%);
+}
+
+
+/* Small Devices Responsive Styles 
+Small device: upto 576 px 
+Medium Device: 576px to 992 px 
+Large Device: above 993 px 
+*/
+
+@media  screen and (max-width:576px) {
+     .nav_options{
+          visibility: hidden;
+     }
+     .item{ 
+          visibility: visible;
+     }
+     .banner_container{
+          flex-direction:column;
+     }
+     .banner_title,
+     .shape{
+          font-size: 2rem;
+     }
+     .btn_class .btn_primary{
+          font-size: 0.8rem;
+          font-weight: 500;
+     }
+     .banner_container .banner_img{
+          width:100%;
+          margin-left: 2px;
+     }
+     .card2{
+          transform:translate(170%,-700%); 
+          height: 70px;
+          width:110px;
+          padding:15px;
+     }
+     .card_description2{
+          font-size:0.5rem;
+     }
+     .card_point2{
+          font-size:1rem;
+     }
+     .card1{
+          transform:translate(5%,-500%); 
+          height: 70px;
+          width:110px;
+          padding:15px;
+     }
+     .card_description{
+          font-size: 0.5rem;
+     }
+     .circle{
+          height:15px;
+          width:15px; 
+          margin-right:5px;
+     }
+     .card_point1{
+          font-size: 0.8rem;
+     }
+     .triangle-right{
+          visibility: visible;
+          transform: translateX(-250%);
+          border-top: 3px solid transparent;
+          border-left: 6px solid white;
+          border-bottom:3px solid transparent; 
+     }
 }
