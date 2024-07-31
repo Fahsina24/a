@@ -28,13 +28,6 @@ body{
      justify-content: center;
      align-items: center;
 }
-.btn_primary{
-     border-radius: 46px;
-     background-color: rgb(230, 83, 60);
-     padding:10px;
-     width:20%;
-     text-align:center;
-}
 
 .color_holder{
      width:100%; 
@@ -45,6 +38,23 @@ body{
 .container{
      width:80%;
      margin:0 auto;   
+}
+
+.btn_primary{
+     font-size:1rem;
+     padding: 15px;
+     width:40%;
+     border-radius: 46px;
+     background-color:rgb(230, 83, 60) ;
+     border: 1px solid rgb(230, 83, 60);
+     color:white;
+ }
+ 
+
+h3{
+     font-size: 2.5rem;
+     font-weight: 900;
+     color: white;
 }
 
 /* Navbar Styles */
@@ -65,6 +75,13 @@ body{
      font-size: 1rem;
      padding:5px 15px 5px 8px;
 }
+.nav_options .btn_primary{
+     border-radius: 46px;
+     background-color: rgb(230, 83, 60);
+     padding:10px;
+     width:20%;
+     text-align:center;
+}
 .menu_bar{
     display: flex;
     flex-direction:column;
@@ -73,7 +90,7 @@ body{
    
 }
 .item{
-     /* visibility: hidden; */
+     visibility: hidden;
      border:1px solid white;
      background-color: white;
      height:2px;
@@ -92,6 +109,9 @@ body{
 .banner_content{
      margin-top:70px;
 }
+.banner_content p{
+     margin-bottom: 30px;
+}
 .banner_title{
      font-size: 3.5rem;
      font-weight: 800;
@@ -103,20 +123,7 @@ body{
      font-weight:500;
      font-style: italic;
 }
-.btn_class{
-     width:100%;
-}
-
-.btn_class .btn_primary{
-    font-size:1rem;
-    padding: 15px;
-    width:40%;
-    margin-top: 20px;
-    border: 1px solid rgb(230, 83, 60);
-    color:white;
-}
-
-.btn_class .btn_border{
+.btn_border{
      border: 1px solid rgb(255, 255, 255);
      background-color: rgba(0, 0, 0, 0);
      margin-left: 10px;
@@ -178,7 +185,75 @@ body{
      position: absolute;
 }
 
+/* Habit Section */
+.habit_section{
+    background-color: rgb(0, 0, 0);
+}
+.habit_container{
+     border:1px solid blue;
+     width: 60%;
+     flex-direction: column;
+} 
 
+.habit_container h3{
+     padding-top:50px;
+     padding-bottom:20px ;
+}
+
+.habit_container p{
+     font-size: 1rem;
+     font-weight: 400;
+     color: rgba(255, 255, 255, 0.5); 
+     text-align: center;
+     padding-bottom: 20px;
+}
+
+.habit_section_img_holder{
+  margin-top: 70px;
+}
+
+.habit_section_img_holder img{
+border-radius: 50%;
+margin-left: 20px;
+}
+.habit_section_img_holder div{
+     flex-direction: column;
+}
+.habit_section_img_holder h4{
+     font-size: 1rem;
+     font-weight: 600;
+     color: white;
+     text-align: center;
+     padding: 30px 0px 10px;
+
+}
+
+.habit_section_img_holder p{
+     font-size: 0.8rem;
+     font-weight: 400;
+     color: rgba(255, 255, 255, 0.5); 
+     text-align: center;
+     margin: 15px;
+}
+
+.run_field {
+     border-radius: 18px;
+     background-color: rgb(34, 34, 34);
+     padding:40px;
+     justify-content: space-between;
+} 
+.run_field_content{
+     width:60%;
+}
+.img_run{
+     border-radius: 18px;
+     height: 250px;
+     width:35%;
+     background-image: url(../images/run.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     
+}
 
 /* Small Devices Responsive Styles 
 Small device: up to 576 px 
