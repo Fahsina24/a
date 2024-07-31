@@ -243,16 +243,26 @@ margin-left: 20px;
      justify-content: space-between;
 } 
 .run_field_content{
+     width:40%;
+     height:350px;
+}
+.run_field_content h3{
+     margin-bottom:20px;
+}
+.run_field_content p{
+     font-size:0.8rem;
+     margin-bottom:20px ;
+}
+.run_field_content .btn_primary{
      width:60%;
 }
 .img_run{
-     border-radius: 18px;
-     height: 250px;
-     width:35%;
+     border-radius: 20px;
+     width: 50%;
+     height:350px;
      background-image: url(../images/run.jpg);
      background-repeat: no-repeat;
-     background-size:cover;
-     
+     background-position: cover;
 }
 
 /* Small Devices Responsive Styles 
