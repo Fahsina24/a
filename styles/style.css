@@ -86,7 +86,7 @@ h3{
     display: flex;
     flex-direction:column;
     align-items: end;
-    transform:translate(-5%,-170%);
+    transform:translate(0%,-171%);
    
 }
 .item{
@@ -234,6 +234,7 @@ margin-left: 20px;
      color: rgba(255, 255, 255, 0.5); 
      text-align: center;
      margin: 15px;
+    
 }
 
 .run_field {
@@ -241,6 +242,7 @@ margin-left: 20px;
      background-color: rgb(34, 34, 34);
      padding:40px;
      justify-content: space-between;
+     margin-top: 70px;
 } 
 .run_field_content{
      width:40%;
@@ -250,19 +252,22 @@ margin-left: 20px;
      margin-bottom:20px;
 }
 .run_field_content p{
-     font-size:0.8rem;
+     font-size:0.6rem;
      margin-bottom:20px ;
 }
 .run_field_content .btn_primary{
      width:60%;
 }
 .img_run{
-     border-radius: 20px;
-     width: 50%;
+     border-radius:20px;
+     width:50%;
      height:350px;
+     background-color: aqua;
      background-image: url(../images/run.jpg);
      background-repeat: no-repeat;
-     background-position: cover;
+     background-position:center;
+     background-size: cover;
+     
 }
 
 /* Small Devices Responsive Styles 
@@ -273,13 +278,19 @@ Large Device: above 993 px
 
 @media  screen and (max-width:576px) {
      /* navbar section */
+     .navbar,
+     .banner_container,
+     .menu_bar
+     {    border: 1px solid pink;
+          width:90%;
+     }
      .nav_options{
           visibility: hidden;
      }
      .item{ 
           visibility: visible;
      }
-
+ 
      /* Banner Section */
 
      .banner_container{
@@ -294,43 +305,94 @@ Large Device: above 993 px
           font-weight: 500;
      }
      .banner_container .banner_img{
-          width:100%;
-          margin: 0px auto;
+          width:60%;
+          margin-top: 50px;
      }
      .card2{
-          transform:translate(170%,-700%); 
+          transform:translate(150%,-700%); 
           height: 70px;
-          width:110px;
+          width:140px;
           padding:15px;
      }
      .card_description2{
-          font-size:0.4rem;
+          font-size:0.6rem;
      }
      .card_point2{
-          font-size:1rem;
+          font-size:1.2rem;
      }
      .card1{
-          transform:translate(5%,-500%); 
-          height: 70px;
-          width:110px;
+          transform:translate(0%,-500%); 
+          height:70px;
+          width:140px;
           padding:15px;
      }
      .card_description{
-          font-size: 0.5rem;
+          font-size: 0.7rem;
      }
      .circle{
-          height:15px;
-          width:15px; 
+          height:20px;
+          width:20px; 
           margin-right:5px;
      }
      .card_point1{
-          font-size: 0.8rem;
+          font-size: 1rem;
      }
      .triangle-right{
           visibility: visible;
-          transform: translateX(-250%);
-          border-top: 3px solid transparent;
-          border-left: 6px solid white;
-          border-bottom:3px solid transparent; 
+          transform: translateX(-220%);
+          border-top: 4px solid transparent;
+          border-left: 8px solid white;
+          border-bottom:4px solid transparent; 
      }
+
+     /* Habit Section */
+     .habit_section_img_holder,
+     .run_field{
+          width:90%;
+          flex-direction: column;
+          border: 1px solid blue;
+     }
+     .habit_container p{
+          font-size: 1.2rem;
+      }
+ 
+     .habit_container{
+          width:80%;
+     }
+     .habit_section_img_holder img{
+         margin-left:70px;
+         margin-bottom: 20px;
+         border:6px solid rgba(128, 128, 128, 0.275);
+     }
+     .habit_section_img_holder p{
+        font-size: 1.2rem;
+        width:300px;
+        padding:5px;
+        margin-bottom: 40px;
+     }
+     .habit_section_img_holder h4{
+            margin:0px;
+            padding: 0px;
+            padding-top: 10px;
+            font-size: 1.5rem;
+     }
+    .run_field_content,
+    .run_field_content .btn_primary,
+    .img_run {
+     width:100%;
+     border: 1px solid yellow;
+    }
+
+    .run_field_content{
+     height:auto;
+    }
+
+    .img_run{
+     background-image: url(../images/run\(full_pic\).jpg);
+     height: 41vmax;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-top: 25px;
+    }
 }
