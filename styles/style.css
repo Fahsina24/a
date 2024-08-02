@@ -17,6 +17,15 @@ body{
 .primary_color{
      color: rgb(230, 83, 60);
 }
+.primary_bg_color{
+     background-color:rgba(0, 0, 0, 0.865);
+}
+.secondary_bg_color{
+     background-color: rgb(0, 0, 0);
+}
+.another_bg_color{
+     background-color: rgb(34, 34, 34);
+}
 .primary_text_color{
      color: rgb(255, 255, 255);
 }
@@ -31,13 +40,13 @@ body{
 
 .color_holder{
      width:100%; 
-     margin:0 auto;
-     background-color:rgba(0, 0, 0, 0.865);
+     border: 1px solid saddlebrown;
 }
 
 .container{
      width:80%;
-     margin:0 auto;   
+     margin:0 auto; 
+     border: 1px solid green;  
 }
 
 .btn_primary{
@@ -51,10 +60,14 @@ body{
  }
  
 
-h3{
+h2{
      font-size: 2.5rem;
      font-weight: 900;
-     color: white;
+}
+
+h3{
+     font-size: 1.5rem;
+     font-weight: 900;
 }
 
 /* Navbar Styles */
@@ -152,25 +165,22 @@ h3{
      font-size: 2rem;
      font-weight: 900;
      padding-left: 10px;
-     color: white;
 }
 .card_description2{
      font-size: 0.65rem;
      margin-top:5px;
      font-weight:700;
      padding-left:10px;
-     color: rgba(255, 255, 255, 0.65);
 }
 .card_description{
      font-size: 0.8rem;
      font-weight: 600;
      margin-top: 5px;
-     color: rgba(255, 255, 255, 0.65);
+ 
 }
 .card_point1{
      font-size: 1.5rem;
      font-weight: 700;
-     color: white;
 }
 .card1{
      transform:translate(-20%, -160%);
@@ -186,15 +196,13 @@ h3{
 }
 
 /* Habit Section */
-.habit_section{
-    background-color: rgb(0, 0, 0);
-}
+
 .habit_container{
      width: 60%;
      flex-direction: column;
 } 
 
-.habit_container h3{
+.habit_container h2{
      padding-top:50px;
      padding-bottom:20px ;
 }
@@ -202,7 +210,6 @@ h3{
 .habit_container p{
      font-size: 1rem;
      font-weight: 400;
-     color: rgba(255, 255, 255, 0.5); 
      text-align: center;
      padding-bottom: 20px;
 }
@@ -221,7 +228,6 @@ margin-left: 20px;
 .habit_section_img_holder h4{
      font-size: 1rem;
      font-weight: 600;
-     color: white;
      text-align: center;
      padding: 30px 0px 10px;
 
@@ -230,7 +236,6 @@ margin-left: 20px;
 .habit_section_img_holder p{
      font-size: 0.8rem;
      font-weight: 400;
-     color: rgba(255, 255, 255, 0.5); 
      text-align: center;
      margin: 15px;
     
@@ -238,25 +243,25 @@ margin-left: 20px;
 
 .run_field {
      border-radius: 18px;
-     background-color: rgb(34, 34, 34);
      padding:40px;
      justify-content: space-between;
      margin-top: 70px;
 } 
 .run_field_content{
      width:40%;
-     height:350px;
+     height:340px;
 }
-.run_field_content h3{
-     font-size: 1rem;
+.run_field_content h2{
      margin-bottom:20px;
+     padding-top:6px;
 }
 .run_field_content p{
-     font-size:0.6rem;
+     font-size:0.7rem;
      margin-bottom:20px ;
 }
 .run_field_content .btn_primary{
      width:60%;
+     font-weight:600;
 }
 .img_run{
      border-radius:20px;
@@ -272,16 +277,40 @@ margin-left: 20px;
 /* BMI Section */
 .BMI_section{
 background-color: black;
-padding:50px;
+padding-top:50px;
+width: 100%;
+flex-direction: column;
+margin: 0;
 }
 .BMI_container{
-     width: 60%;
-     flex-direction: column;
-     padding: 10px;
+     width:60%;
+     flex-direction:column;
+     padding:20px;
 }
-.BMI_container h3{
+.BMI_container h2{
      padding-bottom:10px;
 }
+
+.BMI_chart_calculate{
+  border: 1px solid blue;
+  width:100%;
+}
+
+.BMI_chart_calculate .display_flex{
+     justify-content: space-between;
+}
+
+.BMI_chart_calculate h3{
+     margin-bottom:40px;
+}
+
+table,th,tr,td{
+   border:  2px solid rgba(255, 255, 255, 0.1);
+   border-collapse: collapse;
+   padding: 20px;
+   text-align: left;
+}
+
 
 /* Small Devices Responsive Styles 
 Small device: up to 576 px 
@@ -366,8 +395,8 @@ Large Device: above 993 px
           flex-direction: column;
          
      }
-     .habit_container h3,
-     .run_field_content h3{
+     .habit_container h2,
+     .run_field_content h2{
           font-size: 2.2rem;
      }
      .habit_container p,
