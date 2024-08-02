@@ -190,7 +190,6 @@ h3{
     background-color: rgb(0, 0, 0);
 }
 .habit_container{
-     border:1px solid blue;
      width: 60%;
      flex-direction: column;
 } 
@@ -249,6 +248,7 @@ margin-left: 20px;
      height:350px;
 }
 .run_field_content h3{
+     font-size: 1rem;
      margin-bottom:20px;
 }
 .run_field_content p{
@@ -262,7 +262,6 @@ margin-left: 20px;
      border-radius:20px;
      width:50%;
      height:350px;
-     background-color: aqua;
      background-image: url(../images/run.jpg);
      background-repeat: no-repeat;
      background-position:center;
@@ -281,7 +280,7 @@ Large Device: above 993 px
      .navbar,
      .banner_container,
      .menu_bar
-     {    border: 1px solid pink;
+     {   
           width:90%;
      }
      .nav_options{
@@ -308,6 +307,7 @@ Large Device: above 993 px
           width:60%;
           margin-top: 50px;
      }
+     
      .card2{
           transform:translate(150%,-700%); 
           height: 70px;
@@ -350,9 +350,14 @@ Large Device: above 993 px
      .run_field{
           width:90%;
           flex-direction: column;
-          border: 1px solid blue;
+         
      }
-     .habit_container p{
+     .habit_container h3,
+     .run_field_content h3{
+          font-size: 2.2rem;
+     }
+     .habit_container p,
+     .run_field_content p{
           font-size: 1.2rem;
       }
  
@@ -380,11 +385,16 @@ Large Device: above 993 px
     .run_field_content .btn_primary,
     .img_run {
      width:100%;
-     border: 1px solid yellow;
+    
     }
 
     .run_field_content{
      height:auto;
+    }
+    
+    .run_field_content .btn_primary{
+     font-size: 1.5rem;
+     font-weight: 600;
     }
 
     .img_run{
@@ -395,4 +405,6 @@ Large Device: above 993 px
      background-repeat: no-repeat;
      margin-top: 25px;
     }
+    
+
 }
