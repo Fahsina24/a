@@ -269,6 +269,20 @@ margin-left: 20px;
      
 }
 
+/* BMI Section */
+.BMI_section{
+background-color: black;
+padding:50px;
+}
+.BMI_container{
+     width: 60%;
+     flex-direction: column;
+     padding: 10px;
+}
+.BMI_container h3{
+     padding-bottom:10px;
+}
+
 /* Small Devices Responsive Styles 
 Small device: up to 576 px 
 Medium Device: 576px to 992 px 
