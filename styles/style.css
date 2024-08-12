@@ -56,12 +56,12 @@ body{
      border-radius: 46px;
      background-color:rgb(230, 83, 60) ;
      border: 1px solid rgb(230, 83, 60);
-     color:white;
  }
  
 h2{
      font-size: 2.5rem;
      font-weight: 900;
+     padding-bottom: 20px;
 }
 
 h3{
@@ -207,39 +207,50 @@ h3{
      font-size: 1rem;
      font-weight: 400;
      text-align: center;
+     padding-bottom:10px;
 }
 
 .habit_section_img_holder{
-  margin-top: 70px;
+  margin-top:70px;
+  height:auto;
 }
 
+.main_habit_body{
+  width: 95%;
+  column-gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 1fr 1fr 1fr);
+}
+
+
 .habit_section_img_holder .img_container_habit{
+     margin-top:10px;
      border:6px solid rgba(128, 128, 128, 0.275);
      border-radius:50%;
-
 }
 
 .habit_section_img_holder img{
    border-radius:50%;
    border:1px dashed white;
-   
+   margin: 0;
+   padding: 0;
 }
-.habit_section_img_holder div{
-     flex-direction: column;
-}
+
 .habit_section_img_holder h4{
      font-size: 1rem;
      font-weight: 600;
      text-align: center;
+     padding: 20px 0px;
+     margin:0px;
 }
 
 .habit_section_img_holder p{
      font-size: 0.8rem;
      font-weight: 400;
      text-align: center;
-     margin: 20px;
-    
+     margin-bottom: 20px;
 }
+
 
 .run_field {
      border-radius: 18px;
@@ -446,15 +457,20 @@ Large Device: above 993 px
      }
 
      /* Habit Section */
+
+     
      .habit_section_img_holder,
      .run_field{
           width:90%;
-          flex-direction: column;
          
+     }
+     .run_field{
+          flex-direction: column;
      }
      .habit_container h2,
      .run_field_content h2{
           font-size: 2.2rem;
+
      }
      .habit_container p,
      .run_field_content p{
@@ -464,21 +480,32 @@ Large Device: above 993 px
      .habit_container{
           width:80%;
      }
-     .habit_section_img_holder .img_container_habit{
-              width:fit-content;
-              margin-left: 75px;
+
+     .main_habit_body{
+          grid-template-columns:repeat(1,1fr);
      }
-    
+
      .habit_section_img_holder p{
         font-size: 1.2rem;
-        width:300px;
+         width:300px;
+         align-items: center;
+         margin: 0px auto;
+
      }
      .habit_section_img_holder h4{
-            /* margin:0px;
-            padding: 0px;
-            padding-top: 10px; */
             font-size: 1.5rem;
+            margin-bottom:5px;
+            margin-top: 10px;
      }
+
+     .habit_section_img_holder .img_container_habit{ 
+     width: fit-content;
+    }
+
+    .habit_section_img_holder .secondary_text_color{
+     margin-bottom: 40px;
+    }
+
     .run_field_content,
     .run_field_content .btn_primary,
     .img_run {
