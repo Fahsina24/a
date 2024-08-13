@@ -363,6 +363,22 @@ select{
      margin-top: 10px;
 }
 
+/* Footer Section */
+
+.footer_content{
+     justify-content: space-between;
+}
+.footer_main_content{
+    width:50%;
+    align-items:flex-start ;
+
+}
+
+.help_content{
+     width:16%;
+    
+}
+
 /* Small Devices Responsive Styles 
 Small device: up to 576 px 
 Medium Device: 576px to 992 px 
