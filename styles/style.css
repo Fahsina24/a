@@ -299,6 +299,7 @@ margin: 0;
      width:60%;
      flex-direction:column;
      padding:20px;
+     align-items: flex-start;
 
 }
 .BMI_container h2{
@@ -306,9 +307,9 @@ margin: 0;
 }
 
 .BMI_chart_calculate{
-  border: 1px solid blue;
   width:100%;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .BMI_chart_calculate .display_flex{
@@ -363,6 +364,55 @@ select{
      margin-top: 10px;
 }
 
+/* Meet Team Section */
+.meet_section{
+     height:auto;
+}
+.meet_sec_main_content{
+    height:auto;
+    width: 60%;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.meet_img_container{
+     border-radius: 20px;
+}
+
+.img_holding_sec{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     margin: 20px 20px;
+     row-gap: 15px;
+     column-gap:15px;
+}
+
+.meet_img_container div{
+     width:auto;
+   
+}
+.meet_img_container img{
+     position: relative;
+     width:100%;
+     height: 100%;
+     border-radius: 20px;
+     object-fit: cover;
+}
+
+
+
+.meet_img_container h3{
+     position: absolute;
+     transform: translate(10px,-100px);
+}
+
+.meet_img_container h4{
+     position: absolute;
+     transform: translate(10px,-60px);
+     font-weight: 700;
+    
+}
+
 /* Footer Section */
 
 .footer_content{
@@ -384,8 +434,7 @@ select{
 }
 
 .help_content h3{
-     font-size: 1.8rem;
-     font-weight: 700;
+     font-size: 1.8rem; 
      margin-bottom:20px;
 }
 
