@@ -308,10 +308,12 @@ margin: 0;
 .BMI_chart_calculate{
   border: 1px solid blue;
   width:100%;
+  margin-top: 20px;
 }
 
 .BMI_chart_calculate .display_flex{
      justify-content: space-between; 
+     
 }
 
 .BMI_chart_calculate h3{
@@ -550,4 +552,41 @@ Large Device: above 993 px
     .img_run{
      height: 50%;
     }
+
+    /* BMI Section */
+   
+    .BMI_container,
+    .BMI_chart_calculate{
+     width: 90%;
+     align-items:flex-start;
+     padding: 0px;
+    }
+
+    .BMI_section{
+        margin-top: 0px;
+    }
+
+    .BMI_chart_calculate .container{
+     flex-direction: column;
+     width:100%;
+     align-items: flex-start;
+     margin-top:20px;
+     margin-bottom: 20px;
+    }
+
+ .BMI_chart_calculate h3{
+     font-size: 1.4rem;
+ }
+    
+    .Calculate_section{
+     width: 100%;
+     margin:40px 0px 0px;
+     padding: 0px;
+    }
+
+    .Calculate_section p,
+    .BMI_container p{
+     font-size: 1.3rem;
+    }
+
 }
