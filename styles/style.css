@@ -367,6 +367,7 @@ select{
 
 .footer_content{
      justify-content: space-between;
+     height: 300px;
 }
 .footer_main_content{
     width:50%;
@@ -377,6 +378,12 @@ select{
 .help_content{
      width:16%;
     
+}
+
+hr{
+     border: 3px solid rgba(255, 255, 255, 0.1);
+     width: 80%;
+     margin: 0 auto;
 }
 
 /* Small Devices Responsive Styles 
