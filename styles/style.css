@@ -45,7 +45,6 @@ body{
 .container{
      width:80%;
      margin:0 auto; 
-     border: 1px solid blue;
 }
 
 .btn_primary{
@@ -121,8 +120,9 @@ h3{
      margin-top:70px;
 }
 .banner_content p{
+     font-size: 0.9rem;
      margin-bottom: 30px;
-     margin-top: 50px;
+     margin-top: 20px;
 }
 .banner_title{
      font-size: 3.5rem;
@@ -245,7 +245,7 @@ h3{
 }
 
 .habit_section_img_holder p{
-     font-size: 0.6rem;
+     font-size: 0.7rem;
      font-weight: 400;
      text-align: center;
      margin-bottom: 20px;
@@ -318,6 +318,10 @@ flex-direction: column;
 .BMI_chart_calculate .display_flex{
      justify-content: space-between; 
      
+}
+
+.chart_section{
+     margin-bottom: 35px;
 }
 
 .BMI_chart_calculate h3{
@@ -435,17 +439,22 @@ select{
      height: 100%;
      border-radius: 20px;
      object-fit: cover;
-     margin-bottom: 20px;
+}
+.meet_sec_main_content p{
+     font-size: 0.9rem;
+     text-align: center;
 }
 
 .meet_img_container h3{
+     font-size: 1.2rem;
      position: absolute;
      transform: translate(10px,-100px);
 }
 
 .meet_img_container h4{
+     font-size: 1rem;
      position: absolute;
-     transform: translate(10px,-60px);
+     transform: translate(10px,-80px);
      font-weight: 700;
     
 }
@@ -471,7 +480,7 @@ select{
 }
 
 .help_content h3{
-     font-size: 1.8rem; 
+     font-size: 1.5rem; 
      margin-bottom:20px;
 }
 
@@ -491,7 +500,7 @@ select{
 }
 
 hr{
-     border: 3px solid rgba(255, 255, 255, 0.1);
+     border: 2px solid rgba(255, 255, 255, 0.1);
      width: 80%;
      margin: 5px auto;
 }
