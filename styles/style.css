@@ -289,7 +289,6 @@ h3{
      object-position: 66% 33%;
 }
 
-
 /* BMI Section */
 .BMI_section{
 background-color: black;
@@ -370,7 +369,6 @@ select{
      margin: 20px 0px;
 }
 
-
 /* Membership Section */
 
 .membership_section{
@@ -403,7 +401,6 @@ select{
      background-color: black;
      border-radius: 18px;
 }
-
 
 /* Meet Team Section */
 
@@ -523,7 +520,7 @@ Large Device: above 993 px
      .banner_container,
      .menu_bar
      {   
-          border: 1px solid sandybrown;
+
           width:90%;
      }
      
@@ -570,9 +567,6 @@ Large Device: above 993 px
           margin-top: 40px;
      }
 
-     .banner_container  img{
-          border:1px solid yellow;
-     }
 
      .banner_content .banner_title,
      .banner_content p,
@@ -624,10 +618,11 @@ Large Device: above 993 px
      
      .habit_section_img_holder,
      .run_field{
-          width:90%;
+          width:100%;
          
      }
      .run_field{
+          width: 100%;
           flex-direction: column;
      }
      .habit_container h2,
@@ -656,6 +651,10 @@ Large Device: above 993 px
          margin: 0px auto;
 
      }
+     .img_container_habit{
+           margin: 0 auto;
+     }
+
      .habit_section_img_holder h4{
             font-size: 1.5rem;
             margin-bottom:5px;
@@ -691,7 +690,6 @@ Large Device: above 993 px
      object-fit: cover;
      object-position: cover;
      height: 50%;
-     border: 1px solid blue;
      margin-top: 40px;
     }
 
@@ -707,7 +705,14 @@ Large Device: above 993 px
      align-items:flex-start;
      padding: 0px;
     }
-
+    .BMI_chart_calculate{
+     width: 100%;
+     padding-left: 15px;
+    }
+    .form{
+     padding-right: 15px;
+    }
+  
     .BMI_section{
         margin-top: 0px;
     }
@@ -735,12 +740,28 @@ Large Device: above 993 px
      font-size: 1.3rem;
     }
 
+    /* Membership Section */
+    .membership_container{
+     width:90%;
+    }
+    .membership_container h2{
+     font-size: 2rem;
+    }
+ 
+.member_img{
+     width:90%;
+}
+
 /* Meet Team Section */
 .meet_section .container{
      width:90%;
 }
 .meet_sec_main_content{
      width: 80%;
+}
+
+.meet_sec_main_content p{
+     font-size: 0.8rem;
 }
 
 .img_holding_sec{
