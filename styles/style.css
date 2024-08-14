@@ -447,13 +447,13 @@ select{
 .meet_img_container h3{
      font-size: 1.2rem;
      position: absolute;
-     transform: translate(10px,-100px);
+     transform: translate(10px,-70px);
 }
 
 .meet_img_container h4{
      font-size: 1rem;
      position: absolute;
-     transform: translate(10px,-80px);
+     transform: translate(10px,-50px);
      font-weight: 700;
     
 }
