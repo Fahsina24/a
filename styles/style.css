@@ -614,13 +614,8 @@ Large Device: above 993 px
      }
 
      /* Habit Section */
-
      
-     .habit_section_img_holder,
-     .run_field{
-          width:100%;
-         
-     }
+     
      .run_field{
           width: 100%;
           flex-direction: column;
