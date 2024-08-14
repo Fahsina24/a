@@ -39,14 +39,13 @@ body{
 
 .color_holder{
      width:100%; 
-     border: 1px solid saddlebrown;
+
 }
 
 .container{
      width:80%;
-     margin:0 auto;
-     border: 1px solid seagreen; 
-   
+     margin:0 auto; 
+     border: 1px solid blue;
 }
 
 .btn_primary{
@@ -195,13 +194,13 @@ h3{
 }
 
 /* Habit Section */
-
+.habit_section{
+     padding:50px;
+}
 .habit_container{
      width: 60%;
      flex-direction: column;
-     margin-top: 70px;
 } 
-
 
 .habit_container p{
      font-size: 1rem;
@@ -212,28 +211,29 @@ h3{
 
 .habit_section_img_holder{
   margin-top:70px;
-  height:auto;
+  width: 90%;
 }
 
 .main_habit_body{
-  width: 95%;
-  column-gap: 25px;
+  margin: 0 auto;
+  width: 98%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr 1fr 1fr 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  column-gap:15px;
 }
 
-
-.habit_section_img_holder .img_container_habit{
-     margin-top:10px;
-     border:6px solid rgba(128, 128, 128, 0.275);
-     border-radius:50%;
+ .img_container_habit{
+     border-radius: 50%;
+     background-color: rgba(128, 128, 128, 0.275); 
+     padding:5px;
 }
 
-.habit_section_img_holder img{
+.img_content_container img{
+   width:100%;
    border-radius:50%;
    border:1px dashed white;
-   margin: 0;
-   padding: 0;
+   aspect-ratio: 1/1;
+   object-fit: cover;
 }
 
 .habit_section_img_holder h4{
@@ -245,7 +245,7 @@ h3{
 }
 
 .habit_section_img_holder p{
-     font-size: 0.8rem;
+     font-size: 0.6rem;
      font-weight: 400;
      text-align: center;
      margin-bottom: 20px;
@@ -253,11 +253,12 @@ h3{
 
 
 .run_field {
+     width: 90%;
      border-radius: 18px;
      padding:40px;
      justify-content: space-between;
      margin-top: 70px;
-     margin-bottom: 50px;
+
 } 
 .run_field_content{
      width:40%;
@@ -287,14 +288,16 @@ h3{
      object-fit: none;
      object-position: 66% 33%;
 }
+
+
 /* BMI Section */
 .BMI_section{
 background-color: black;
 padding-top:50px;
 width: 100%;
 flex-direction: column;
-margin: 0;
 }
+
 .BMI_container{
      width:60%;
      flex-direction:column;
@@ -303,13 +306,13 @@ margin: 0;
 
 }
 .BMI_container h2{
-     padding-bottom:10px;
+     padding-bottom:20px;
 }
 
 .BMI_chart_calculate{
   width:100%;
   margin-top: 20px;
-  margin-bottom: 20px;
+ 
 }
 
 .BMI_chart_calculate .display_flex{
@@ -361,19 +364,61 @@ select{
 .form button{
      padding:10px;
      width: 90%;
-     margin-top: 10px;
+     margin: 20px 0px;
 }
 
+
+/* Membership Section */
+
+.membership_section{
+     padding:20px 0px 90px;
+}
+
+.membership_container{
+     width:60%;
+     flex-direction: column;
+     text-align: center;
+}
+.membership_container button{
+        margin: 30px;
+}
+
+.membership_container h2{
+     margin-top: 70px;
+}
+
+.membership_section img {
+   width: 100%;
+   border-radius: 20px;
+   object-fit: contain;
+   border: 1px dashed white;
+}
+
+.member_img{
+     padding: 10px;
+     margin-top:20px ;
+     background-color: black;
+     border-radius: 18px;
+}
+
+
 /* Meet Team Section */
+
+.meet_content{
+     padding:20px 0px 30px;
+}
 
 .meet_sec_main_content{
     width: 60%;
     text-align: center;
-    margin: 40px auto;
+    padding-top:30px;
+    margin: 0 auto;
 }
 
 .meet_img_container{
      border-radius: 20px;
+     padding: 5px;
+     margin-top: 30px;
 }
 
 .img_holding_sec{
@@ -384,16 +429,13 @@ select{
      column-gap:15px;
 }
 
-.meet_img_container div{
-     width:auto;
-   
-}
 .meet_img_container img{
      position: relative;
      width:100%;
      height: 100%;
      border-radius: 20px;
      object-fit: cover;
+     margin-bottom: 20px;
 }
 
 .meet_img_container h3{
@@ -451,7 +493,7 @@ select{
 hr{
      border: 3px solid rgba(255, 255, 255, 0.1);
      width: 80%;
-     margin: 0 auto;
+     margin: 5px auto;
 }
 
 .copyRight{
